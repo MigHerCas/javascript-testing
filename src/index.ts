@@ -1,6 +1,6 @@
 import { subtract, subtractAsync, sum, sumAsync } from "./math";
 
-async function test(title: string, callback: () => void) {
+async function test(title: string, callback: () => Promise<void> | void) {
   try {
     await callback();
     console.log(`✓ ${title}`);
