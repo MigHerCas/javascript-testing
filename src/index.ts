@@ -1,25 +1,5 @@
 import { subtract, subtractAsync, sum, sumAsync } from "./math";
 
-async function test(title: string, callback: () => Promise<void> | void) {
-  try {
-    await callback();
-    console.log(`✓ ${title}`);
-  } catch (error) {
-    console.error(`✕ ${title}`);
-    console.error(error);
-  }
-}
-
-function expect(actual: unknown) {
-  return {
-    toBe(expected: unknown) {
-      if (actual !== expected) {
-        throw new Error(`${actual} is not equal to ${expected}`);
-      }
-    },
-  };
-}
-
 test("sum adds numbers", () => {
   const result = sum(3, 7);
   const expected = 10;
