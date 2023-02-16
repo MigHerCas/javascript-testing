@@ -11,10 +11,12 @@
     "url": "git+https://github.com/MigHerCas/javascript-testing.git"
   },
   "keywords": [],
-  "author": "Miguel Hernanz",
+  "author": "MigHerCasc",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MigHerCas/javascript-testing/issues"
   },
-  "homepage": "https://github.com/MigHerCas/javascript-testing#readme"
+  "homepage": "https://github.com/MigHerCas/javascript-testing#readme",
+  "devDependencies": {},
+  "dependencies": {}
 }
